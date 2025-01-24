@@ -50,6 +50,8 @@ app.post("/subscribe", async (req, res) => {
   } catch (error) {
     console.error(error);
   }
+
+  res.status(200).json({ message: "subscribed" });
 });
 
 // Start the server
